@@ -1,0 +1,230 @@
+/*======================================
+    NOTEBOOK
+======================================*/
+
+@media (max-width:1200px){
+
+    .container{
+        width:92%;
+    }
+
+    .hero h1{
+        font-size:4rem;
+    }
+
+    .custom-content h2{
+        font-size:3rem;
+    }
+
+}
+
+/*======================================
+    TABLET
+======================================*/
+
+@media (max-width:992px){
+
+    .hero-grid,
+    .custom-grid{
+
+        grid-template-columns:1fr;
+        gap:60px;
+        text-align:center;
+
+    }
+
+    .hero-buttons{
+
+        justify-content:center;
+        flex-wrap:wrap;
+
+    }
+
+    .hero-image{
+
+        order:-1;
+
+    }
+
+    .hero-image::before{
+
+        display:none;
+
+    }
+
+    .footer-grid{
+
+        grid-template-columns:1fr;
+        text-align:center;
+
+    }
+
+    .footer-logo{
+
+        margin:auto auto 25px;
+
+    }
+
+}
+
+/*======================================
+    CELULAR
+======================================*/
+
+@media (max-width:768px){
+
+    .header .container{
+
+        padding:18px 0;
+
+    }
+
+    .navbar{
+
+        display:none;
+
+    }
+
+    .header-icons{
+
+        gap:10px;
+
+    }
+
+    .logo img{
+
+        width:130px;
+
+    }
+
+    .hero{
+
+        padding-top:120px;
+        min-height:auto;
+
+    }
+
+    .hero h1{
+
+        font-size:3rem;
+
+    }
+
+    .hero p{
+
+        font-size:1rem;
+
+    }
+
+    .hero-buttons{
+
+        flex-direction:column;
+
+    }
+
+    .btn{
+
+        width:100%;
+
+    }
+
+    .section-title h2{
+
+        font-size:2.3rem;
+
+    }
+
+    .categories{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .products{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .benefits-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .testimonial-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .gallery-grid{
+
+        columns:2;
+
+    }
+
+    #newsletter form{
+
+        flex-direction:column;
+
+    }
+
+    #newsletter input{
+
+        width:100%;
+
+    }
+
+}
+
+/*======================================
+    CELULAR PEQUENO
+======================================*/
+
+@media (max-width:480px){
+
+    .hero h1{
+
+        font-size:2.4rem;
+
+    }
+
+    .section-title h2{
+
+        font-size:2rem;
+
+    }
+
+    .custom-content h2{
+
+        font-size:2.3rem;
+
+    }
+
+    .category img{
+
+        height:220px;
+
+    }
+
+    .product-card img{
+
+        height:280px;
+
+    }
+
+    .gallery-grid{
+
+        columns:1;
+
+    }
+
+    .icon-btn{
+
+        width:40px;
+        height:40px;
+
+    }
+
+}
