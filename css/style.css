@@ -484,6 +484,12 @@ h3{
 
 }
 
+.product-size{
+    font-size:0.9rem;
+    color:var(--gray);
+    margin:8px 0;
+}
+
 .product-card{
 
     background:white;
