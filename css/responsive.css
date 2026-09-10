@@ -74,36 +74,32 @@
 @media (max-width:768px){
 
     .header .container{
-
-        padding:15px 0;
-
+        padding:12px 15px;
     }
 
     .navbar{
-
         display:none;
-        width:60px;
-
     }
 
     .header-icons{
-
-        gap:8px;
-
+        gap:6px;
     }
 
     .logo img{
+        width:100px;
+    }
 
-        width:50px;
-
+    .icon-btn{
+        width:38px;
+        height:38px;
+        font-size:1.2rem;
     }
 
     .hero{
-
         padding-top:70px;
         min-height:auto;
-
     }
+
 
     .hero h1{
 
