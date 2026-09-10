@@ -82,7 +82,7 @@
     .navbar{
 
         display:none;
-        width:100px;
+        width:60px;
 
     }
 
@@ -100,7 +100,7 @@
 
     .hero{
 
-        padding-top:90px;
+        padding-top:70px;
         min-height:auto;
 
     }
