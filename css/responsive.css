@@ -74,7 +74,7 @@
 @media (max-width:768px){
 
     .header .container{
-        padding:12px 15px;
+        padding:8px 15px;
     }
 
     .navbar{
@@ -82,7 +82,7 @@
     }
 
     .header-icons{
-        gap:6px;
+        gap:5px;
     }
 
     .logo img{
@@ -90,9 +90,9 @@
     }
 
     .icon-btn{
-        width:38px;
-        height:38px;
-        font-size:1.2rem;
+        width:34px;
+        height:34px;
+        font-size:1.1rem;
     }
 
     .hero{
