@@ -1,39 +1,20 @@
-/*======================================
-    NOTEBOOK
-======================================*/
+/* =====================================================
+   RESPONSIVE - FIÃES ARTES
+   ===================================================== */
 
-@media (max-width:1200px){
 
-    .container{
-        width:92%;
-    }
+/* =========================
+   TABLET / NOTEBOOK
+   ========================= */
 
-    .hero h1{
-        font-size:4rem;
-    }
-
-    .custom-content h2{
-        font-size:3rem;
-    }
-
-}
-
-/*======================================
-    RESPONSIVO - TABLETS
-======================================*/
-
-@media (max-width:1200px){
+@media (max-width: 1200px){
 
     .container{
         width:92%;
     }
 
-    .header .container{
-        padding:20px 0;
-    }
-
-    .navbar ul{
-        gap:28px;
+    .hero{
+        padding-top:80px;
     }
 
     .hero-grid{
@@ -41,7 +22,7 @@
     }
 
     .hero h1{
-        font-size:4.2rem;
+        font-size:4rem;
     }
 
     .custom-grid{
@@ -49,16 +30,21 @@
     }
 
     .custom-content h2{
-        font-size:3.2rem;
+        font-size:3rem;
     }
+
+    .section-title{
+        margin-bottom:55px;
+    }
+
 }
 
 
-/*======================================
-    TABLET
-======================================*/
+/* =========================
+   TABLET
+   ========================= */
 
-@media (max-width:992px){
+@media (max-width: 992px){
 
     /* HEADER */
 
@@ -71,7 +57,7 @@
     }
 
     .navbar ul{
-        gap:18px;
+        gap:22px;
     }
 
     .navbar a{
@@ -103,26 +89,11 @@
     }
 
     .hero-text{
-        max-width:700px;
-        margin:auto;
-    }
-
-    .hero h1{
-        font-size:4rem;
-    }
-
-    .hero p{
-        max-width:650px;
-        margin-left:auto;
-        margin-right:auto;
-    }
-
-    .hero-buttons{
-        justify-content:center;
-        flex-wrap:wrap;
+        order:2;
     }
 
     .hero-image{
+        order:1;
         max-width:650px;
         width:100%;
         margin:auto;
@@ -132,33 +103,26 @@
         display:none;
     }
 
-
-    /* SEÇÕES */
-
-    #categorias,
-    #produtos,
-    #benefits,
-    #gallery,
-    #testimonials,
-    #newsletter,
-    #contato{
-        padding:90px 0;
+    .hero h1{
+        font-size:3.8rem;
     }
 
-    .custom-order{
-        padding:100px 0;
+    .hero p{
+        max-width:650px;
+        margin:0 auto 30px;
     }
 
-    .section-title{
-        margin-bottom:50px;
-    }
-
-    .section-title h2{
-        font-size:2.8rem;
+    .hero-buttons{
+        justify-content:center;
+        flex-wrap:wrap;
     }
 
 
     /* CATEGORIAS */
+
+    #categorias{
+        padding:90px 0;
+    }
 
     .categories{
         grid-template-columns:repeat(2,1fr);
@@ -166,11 +130,20 @@
     }
 
     .category img{
-        height:250px;
+        height:280px;
+    }
+
+    .category h3{
+        font-size:1.6rem;
+        padding:20px;
     }
 
 
     /* PRODUTOS */
+
+    #produtos{
+        padding:90px 0;
+    }
 
     .products{
         grid-template-columns:repeat(2,1fr);
@@ -182,26 +155,31 @@
     }
 
     .product-info{
-        padding:25px;
+        padding:22px;
+        text-align:center;
+    }
+
+    .product-info .btn{
+        display:block;
+        width:max-content;
+        margin:0 auto;
     }
 
 
     /* ENCOMENDAS */
 
+    .custom-order{
+        padding:100px 0;
+    }
+
     .custom-grid{
         grid-template-columns:1fr;
         gap:50px;
+        text-align:center;
     }
 
     .custom-image{
         max-width:650px;
-        width:100%;
-        margin:auto;
-    }
-
-    .custom-content{
-        text-align:center;
-        max-width:700px;
         margin:auto;
     }
 
@@ -210,9 +188,17 @@
     }
 
 
-    /* BENEFÍCIOS */
+    /* BENEFICIOS */
 
     .benefits-grid{
+        grid-template-columns:repeat(2,1fr);
+        gap:25px;
+    }
+
+
+    /* DEPOIMENTOS */
+
+    .testimonial-grid{
         grid-template-columns:repeat(2,1fr);
         gap:25px;
     }
@@ -222,26 +208,14 @@
 
     .gallery-grid{
         columns:2;
-        column-gap:20px;
-    }
-
-    .gallery-grid img{
-        margin-bottom:20px;
-    }
-
-
-    /* DEPOIMENTOS */
-
-    .testimonial-grid{
-        grid-template-columns:1fr;
-        max-width:700px;
-        margin:auto;
+        column-gap:18px;
     }
 
 
     /* NEWSLETTER */
 
     #newsletter form{
+        width:100%;
         max-width:600px;
         margin:auto;
     }
@@ -254,28 +228,19 @@
         gap:40px;
     }
 
-    .footer-grid > div:first-child{
-        grid-column:1 / -1;
-        text-align:center;
-    }
-
-    .footer-logo{
-        margin:0 auto 25px;
-    }
 }
 
 
-/*======================================
-    CELULAR
-======================================*/
+/* =========================
+   CELULAR
+   ========================= */
 
-@media (max-width:768px){
+@media (max-width: 768px){
 
     /* HEADER */
 
     .header .container{
-        width:92%;
-        padding:8px 0;
+        padding:10px 0;
     }
 
     .navbar{
@@ -291,51 +256,40 @@
     }
 
     .icon-btn{
-        width:34px;
-        height:34px;
-        font-size:1.05rem;
-        box-shadow:0 5px 18px rgba(0,0,0,.08);
+        width:36px;
+        height:36px;
+        font-size:1.1rem;
     }
 
 
     /* HERO */
 
     .hero{
-        padding:105px 0 65px;
+        padding:100px 0 60px;
     }
 
     .hero-grid{
         gap:35px;
     }
 
-    .hero-tag{
-        font-size:.8rem;
-        letter-spacing:1.5px;
-    }
-
     .hero h1{
         font-size:3rem;
         line-height:1.05;
-        margin:18px 0;
+        margin:20px 0;
     }
 
     .hero p{
         font-size:.95rem;
         line-height:1.7;
-        margin-bottom:28px;
     }
 
     .hero-buttons{
         flex-direction:column;
+        align-items:stretch;
         gap:12px;
-        width:100%;
     }
 
     .hero-buttons .btn{
-        width:100%;
-    }
-
-    .hero-image{
         width:100%;
     }
 
@@ -344,76 +298,51 @@
     }
 
 
-    /* TÍTULOS */
+    /* TITULOS */
 
     .section-title{
-        margin-bottom:38px;
-    }
-
-    .section-title span{
-        font-size:.75rem;
-        letter-spacing:1.5px;
+        margin-bottom:40px;
     }
 
     .section-title h2{
         font-size:2.3rem;
-        line-height:1.1;
-    }
-
-
-    /* ESPAÇAMENTO DAS SEÇÕES */
-
-    #categorias,
-    #produtos,
-    #benefits,
-    #gallery,
-    #testimonials,
-    #newsletter,
-    #contato{
-        padding:75px 0;
-    }
-
-    .custom-order{
-        padding:80px 0;
     }
 
 
     /* CATEGORIAS */
 
-    .categories{
-        grid-template-columns:1fr;
-        gap:20px;
+    #categorias{
+        padding:75px 0;
     }
 
-    .category{
-        border-radius:18px;
+    .categories{
+        grid-template-columns:1fr;
+        gap:22px;
     }
 
     .category img{
-        height:250px;
+        height:260px;
     }
 
     .category h3{
+        font-size:1.5rem;
         padding:18px;
-        font-size:1.7rem;
     }
 
 
     /* PRODUTOS */
+
+    #produtos{
+        padding:75px 0;
+    }
 
     .products{
         grid-template-columns:1fr;
         gap:25px;
     }
 
-    .product-card{
-        border-radius:20px;
-    }
-
     .product-card img{
-        height:auto;
-        max-height:400px;
-        object-fit:cover;
+        height:330px;
     }
 
     .product-info{
@@ -422,85 +351,40 @@
     }
 
     .product-info h3{
-        font-size:1.8rem;
-        margin-bottom:8px;
-    }
-
-    .product-info p{
-        margin-bottom:12px;
-    }
-
-    .price{
-        font-size:1.3rem;
-        margin-bottom:20px;
+        font-size:1.7rem;
     }
 
     .product-info .btn{
+        display:block;
         width:100%;
+        margin:0 auto;
     }
 
 
     /* ENCOMENDAS */
 
+    .custom-order{
+        padding:80px 0;
+    }
+
     .custom-grid{
         gap:35px;
     }
 
-    .custom-image img{
-        border-radius:18px;
-    }
-
-    .custom-content{
-        text-align:center;
-    }
-
-    .section-subtitle{
-        font-size:.8rem;
-        letter-spacing:1.5px;
-    }
-
     .custom-content h2{
         font-size:2.4rem;
-        line-height:1.1;
-        margin:15px 0 20px;
     }
 
     .custom-content p{
-        font-size:.95rem;
         line-height:1.7;
-        margin-bottom:28px;
-    }
-
-    .custom-content .btn{
-        width:100%;
     }
 
 
-    /* BENEFÍCIOS */
+    /* BENEFICIOS */
 
     .benefits-grid{
         grid-template-columns:1fr;
-        gap:18px;
-    }
-
-    .benefit{
-        padding:30px 22px;
-        border-radius:18px;
-    }
-
-    .benefit-icon{
-        font-size:2.5rem;
-        margin-bottom:12px;
-    }
-
-    .benefit h3{
-        font-size:1.7rem;
-        margin-bottom:10px;
-    }
-
-    .benefit p{
-        font-size:.9rem;
-        line-height:1.7;
+        gap:20px;
     }
 
 
@@ -520,33 +404,12 @@
     /* DEPOIMENTOS */
 
     .testimonial-grid{
-        gap:18px;
-    }
-
-    .testimonial{
-        padding:28px 22px;
-        border-radius:18px;
-    }
-
-    .testimonial p{
-        font-size:.9rem;
-        line-height:1.7;
-        margin-bottom:18px;
+        grid-template-columns:1fr;
+        gap:20px;
     }
 
 
     /* NEWSLETTER */
-
-    #newsletter h2{
-        font-size:2.3rem;
-        line-height:1.1;
-    }
-
-    #newsletter p{
-        font-size:.9rem;
-        line-height:1.7;
-        margin:15px 0 28px;
-    }
 
     #newsletter form{
         flex-direction:column;
@@ -555,37 +418,14 @@
 
     #newsletter input{
         width:100%;
-        padding:16px 20px;
     }
 
-    #newsletter .btn{
-        width:100%;
-    }
-
-
-    /* CONTATO */
-
-    .contact-description{
-        font-size:.9rem;
-        line-height:1.7;
-        margin:20px auto 30px;
-    }
-
-    .contact-buttons{
-        flex-direction:column;
-        gap:12px;
-    }
-
-    .contact-buttons .btn{
+    #newsletter button{
         width:100%;
     }
 
 
     /* FOOTER */
-
-    footer{
-        padding-top:60px;
-    }
 
     .footer-grid{
         grid-template-columns:1fr;
@@ -593,36 +433,18 @@
         gap:35px;
     }
 
-    .footer-grid > div:first-child{
-        grid-column:auto;
-    }
-
     .footer-logo{
-        width:140px;
-        margin:0 auto 20px;
+        margin:0 auto 25px;
     }
 
-    footer h3{
-        margin-bottom:15px;
-    }
-
-    footer li{
-        margin-bottom:10px;
-    }
-
-    .copyright{
-        margin-top:45px;
-        padding:20px 15px;
-        font-size:.8rem;
-    }
 }
 
 
-/*======================================
-    CELULAR PEQUENO
-======================================*/
+/* =========================
+   CELULAR PEQUENO
+   ========================= */
 
-@media (max-width:480px){
+@media (max-width: 480px){
 
     .container{
         width:90%;
@@ -632,8 +454,7 @@
     /* HEADER */
 
     .header .container{
-        width:92%;
-        padding:7px 0;
+        padding:8px 0;
     }
 
     .logo img{
@@ -641,8 +462,8 @@
     }
 
     .icon-btn{
-        width:32px;
-        height:32px;
+        width:34px;
+        height:34px;
         font-size:1rem;
     }
 
@@ -650,11 +471,11 @@
     /* HERO */
 
     .hero{
-        padding:95px 0 55px;
+        padding:90px 0 50px;
     }
 
     .hero h1{
-        font-size:2.45rem;
+        font-size:2.4rem;
     }
 
     .hero p{
@@ -662,10 +483,14 @@
     }
 
 
-    /* TÍTULOS */
+    /* TITULOS */
 
     .section-title h2{
         font-size:2rem;
+    }
+
+    .section-title span{
+        font-size:.75rem;
     }
 
 
@@ -675,24 +500,15 @@
         height:220px;
     }
 
-    .category h3{
-        font-size:1.55rem;
-        padding:16px;
-    }
-
 
     /* PRODUTOS */
 
     .product-card img{
-        max-height:330px;
-    }
-
-    .product-info{
-        padding:22px 18px;
+        height:280px;
     }
 
     .product-info h3{
-        font-size:1.65rem;
+        font-size:1.5rem;
     }
 
 
@@ -709,22 +525,4 @@
         columns:1;
     }
 
-    .gallery-grid img{
-        border-radius:14px;
-        margin-bottom:15px;
-    }
-
-
-    /* BENEFÍCIOS */
-
-    .benefit{
-        padding:27px 20px;
-    }
-
-
-    /* FOOTER */
-
-    .footer-logo{
-        width:125px;
-    }
 }
