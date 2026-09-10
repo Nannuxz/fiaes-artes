@@ -522,6 +522,14 @@ h3{
 
     padding:28px;
 
+    text-align:center;
+
+}
+
+.product-info .btn{
+    
+    margin:0 auto;
+    
 }
 
 .product-info h3{
