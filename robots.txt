@@ -1,0 +1,5 @@
+
+User-agent: *
+Allow: /
+
+Sitemap: https://xn--fiesartes-m2a.com.br/sitemap.xml
